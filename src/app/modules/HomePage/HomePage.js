@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import demoData from "../../assets/demoData";
+import CompanyObjective from "../CompanyObjective/CompanyObjective";
+import Footer from "../Footer/Footer";
 import LatestBlog from "../LatestBlog/LatestBlog";
+import SideNav from "../SideNav/SideNav";
 import Products from "./Products";
 
 const HomePage = () => {
@@ -10,7 +13,7 @@ const HomePage = () => {
     <>
       <div className="row">
         <div className="col-md-3">
-          <h1>Sidebar</h1>
+          <SideNav/>
         </div>
         <div className="col-md-9">
           <div className="row">
@@ -23,6 +26,8 @@ const HomePage = () => {
         </div>
       </div>
       <LatestBlog />
+      <CompanyObjective />
+      <Footer/>
     </>
   );
 };
