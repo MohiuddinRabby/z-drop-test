@@ -3,15 +3,16 @@ import { CartContext } from "../../assets/context/CartContext";
 import "./Products.css";
 const Products = (props) => {
   const { name, price, img } = props.products;
+  // eslint-disable-next-line no-unused-vars
   const [cart, setCart] = useContext(CartContext);
   const handleCart = () => {
     const items = { name: name, price: price };
-    const count = cart?.filter((item) => item?.id === items?.id).length;
-    if (count === 0) {
-      setCart((prevCart) => [...prevCart, items]);
-    } else {
-      console.log("duplicate");
-    }
+    // const count = cart?.filter((item) => item?.id === items?.id).length;
+    // if (count === 0) {
+    setCart((prevCart) => [...prevCart, items]);
+    // } else {
+    //   console.log("duplicate");
+    // }
   };
   return (
     <div className="card text-center">

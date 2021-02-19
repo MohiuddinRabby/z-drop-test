@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../../assets/context/CartContext";
 
 const MainNav = () => {
+  // eslint-disable-next-line no-unused-vars
   const [cart, setCart] = useContext(CartContext);
-  console.log("cart from cart", cart);
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -63,9 +63,16 @@ const MainNav = () => {
               </div>
             </Link>
           </ul>
-          <h6>
-            <i className="fas fa-cart-plus" style={{ fontSize: "25px",color:'#078750' }}>&nbsp;{cart.length}</i> 
-          </h6>
+          <Link to="/cart">
+            <h6>
+              <i
+                className="fas fa-cart-plus"
+                style={{ fontSize: "25px", color: "#078750" }}
+              >
+                &nbsp;{cart.length}
+              </i>
+            </h6>
+          </Link>
         </div>
       </nav>
       <hr />
