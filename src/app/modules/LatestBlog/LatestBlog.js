@@ -1,9 +1,12 @@
 import React from "react";
-import './LatestBlog.css';
-import imgOne from '../../assets/productImages/26801830821918.png'
+import "./LatestBlog.css";
+import imgOne from "../../assets/productImages/26801830821918.png";
+import imgTwo from '../../assets/productImages/Hair-Care.png'
+import imgThree from '../../assets/productImages/26824312324126.png'
+import imgFour from '../../assets/productImages/Image 117.png'
 const LatestBlog = () => {
   return (
-    <div className="text-center">
+    <div className="text-center py-5">
       <h1>Latest Blogs</h1>
       <h4>
         This is a place devoted to giving you deeper insight into the news,
@@ -18,25 +21,8 @@ const LatestBlog = () => {
                   <img src={imgOne} className="img-fluid" alt="" />
                 </div>
                 <div className="member-info">
-                  <h4>RICK SIMMONS</h4>
-                  <span>OWNER</span>
-                  <div className="social-links">
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </div>
+                  <h4>Shop Now</h4>
+                  <span>OCT 12, 2020</span>
                 </div>
               </div>
             </div>
@@ -44,28 +30,11 @@ const LatestBlog = () => {
             <div className="col-lg-3 col-md-6">
               <div className="member">
                 <div className="member-img">
-                  <img src="img/team/team-6.jpg" className="img-fluid" alt="" />
+                  <img src={imgTwo} className="img-fluid" alt="" />
                 </div>
                 <div className="member-info">
-                  <h4>JANE PETERSON</h4>
-                  <span>FARM MANAGER</span>
-                  <div className="social-links">
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </div>
+                  <h4>Shop Now</h4>
+                  <span>OCT 12, 2020</span>
                 </div>
               </div>
             </div>
@@ -73,28 +42,11 @@ const LatestBlog = () => {
             <div className="col-lg-3 col-md-6">
               <div className="member">
                 <div className="member-img">
-                  <img src="img/team/team-5.jpg" className="img-fluid" alt="" />
+                  <img src={imgThree} className="img-fluid" alt="" />
                 </div>
                 <div className="member-info">
-                  <h4>KATE MCMILLAN</h4>
-                  <span>SALES MANAGER</span>
-                  <div className="social-links">
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </div>
+                  <h4>Shop Now</h4>
+                  <span>OCT 12, 2020</span>
                 </div>
               </div>
             </div>
@@ -102,28 +54,11 @@ const LatestBlog = () => {
             <div className="col-lg-3 col-md-6">
               <div className="member">
                 <div className="member-img">
-                  <img src="img/team/team-7.jpg" className="img-fluid" alt="" />
+                  <img src={imgFour} className="img-fluid" alt="" />
                 </div>
                 <div className="member-info">
-                  <h4>SUZI WILLIAMS</h4>
-                  <span>FARMER</span>
-                  <div className="social-links">
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </div>
+                  <h4>Shop Now</h4>
+                  <span>OCT 12, 2020</span>
                 </div>
               </div>
             </div>

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../assets/context/CartContext";
 
 const MainNav = () => {
+  const [cart, setCart] = useContext(CartContext);
+  console.log("cart from cart", cart);
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -60,14 +63,9 @@ const MainNav = () => {
               </div>
             </Link>
           </ul>
-          <form className="form-inline my-2 my-lg-0">
-            <input
-              className="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          </form>
+          <h6>
+            <i className="fas fa-cart-plus" style={{ fontSize: "25px",color:'#078750' }}>&nbsp;{cart.length}</i> 
+          </h6>
         </div>
       </nav>
       <hr />

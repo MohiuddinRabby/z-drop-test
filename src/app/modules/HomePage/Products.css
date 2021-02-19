@@ -1,0 +1,8 @@
+.cart-btn{
+    color: #0da161;
+    font-size: 25px;
+    cursor: pointer;
+}
+.cart-btn:hover{
+    color: #078750;
+}
