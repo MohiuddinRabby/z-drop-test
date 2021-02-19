@@ -5,6 +5,7 @@ import HomePage from "./app/modules/HomePage/HomePage";
 import MainNav from "./app/modules/MainNav/MainNav";
 import { ContextProvider } from "./app/assets/context/CartContext";
 import Cart from "./app/modules/Cart/Cart";
+import ProductDetails from "./app/modules/HomePage/ProductDetails";
 const App = () => {
   return (
     <div className="container">
@@ -19,6 +20,7 @@ const App = () => {
               <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/cart" component={Cart} />
+                <Route path="/product/:id" component={ProductDetails} />
               </Switch>
             </div>
           </div>

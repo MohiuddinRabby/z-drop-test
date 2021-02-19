@@ -7,7 +7,7 @@ import imgFour from '../../assets/productImages/Image 117.png'
 const LatestBlog = () => {
   return (
     <div className="text-center py-5">
-      <h1>Latest Blogs</h1>
+      <h1 className="text-success">Latest Blogs</h1>
       <h4>
         This is a place devoted to giving you deeper insight into the news,
         trends, people and technology behind Bing.
