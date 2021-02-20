@@ -7,7 +7,7 @@ const Products = (props) => {
   // eslint-disable-next-line no-unused-vars
   const [cart, setCart] = useContext(CartContext);
   const handleCart = () => {
-    const items = { name: name, price: price };
+    const items = { name: name, price: price, img: img };
     // const count = cart?.filter((item) => item?.id === items?.id).length;
     // if (count === 0) {
     setCart((prevCart) => [...prevCart, items]);

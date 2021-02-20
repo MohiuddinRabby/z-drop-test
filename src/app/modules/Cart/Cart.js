@@ -22,7 +22,21 @@ const Cart = () => {
       </div>
       <div className="py-5">
         {cart.map((items) => (
-          <li>{items.name}</li>
+          // <li>{items.name}</li>
+          <table className="table" key={items.id}>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src={items.img}
+                    style={{ width: "50px", height: "50px" }}
+                    alt=""
+                  />
+                </td>
+                <td>{items.name}</td>
+              </tr>
+            </tbody>
+          </table>
         ))}
       </div>
       {cart.length > 0 ? (

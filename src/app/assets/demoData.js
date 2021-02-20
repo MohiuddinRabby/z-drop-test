@@ -1,7 +1,7 @@
 const demoData = [
   {
     id: 1,
-    name: "Bag, Leather stylish bag",
+    name: "Leather stylish bag",
     price: 10.99,
     img: "https://i.ibb.co/cy2fBhG/1a-300x300.png",
     details:
@@ -12,7 +12,7 @@ const demoData = [
 
   {
     id: 2,
-    name: "GAP Stylish long sleeve shirt",
+    name: "Headphone",
     price: 100,
     img: "https://i.ibb.co/7b9wg9C/4a-300x300.png",
     details:
@@ -23,7 +23,7 @@ const demoData = [
 
   {
     id: 3,
-    name: "Firstly Comfortable Shoes for Men",
+    name: "Firstly Comfortable shirt for Men",
     price: 100,
     img: "https://i.ibb.co/2nqYjfx/asset-8.png",
     details:
@@ -34,7 +34,7 @@ const demoData = [
 
   {
     id: 4,
-    name: "Microsoft Game controller for Xbox",
+    name: "Man stylish watch",
     price: 70.5,
     img: "https://i.ibb.co/Bc59YBw/asset-3.png",
     details:

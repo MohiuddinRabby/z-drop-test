@@ -14,9 +14,9 @@ const ProductDetails = () => {
   );
   return (
     <div>
-      <h1 className="text-success" style={{ marginBottom: "30px" }}>
+      <h3 className="text-success" style={{ marginBottom: "30px" }}>
         Product Details
-      </h1>
+      </h3>
       <Link to="/" className="btn btn-primary">
         Back Home
       </Link>

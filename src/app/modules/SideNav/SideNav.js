@@ -14,8 +14,8 @@ const SideNav = () => {
                 data-target="#collapse_1"
                 aria-expanded="true"
               >
-                <i className="icon-control fa fa-chevron-down"></i>
-                <h6 className="title">Product type</h6>
+                <i className="icon-control fa fa-chevron-down text-success"></i>
+                <h6 className=" text-success title">Product type</h6>
               </a>
             </header>
             <div className="filter-content collapse show" id="collapse_1">
@@ -64,8 +64,8 @@ const SideNav = () => {
                 aria-expanded="true"
                 className=""
               >
-                <i className="icon-control fa fa-chevron-down"></i>
-                <h6 className="title">Brands</h6>
+                <i className="icon-control fa fa-chevron-down text-success"></i>
+                <h6 className="title  text-success">Brands</h6>
               </a>
             </header>
             <div className="filter-content collapse show" id="collapse_2">
@@ -144,8 +144,8 @@ const SideNav = () => {
                 aria-expanded="true"
                 className=""
               >
-                <i className="icon-control fa fa-chevron-down"></i>
-                <h6 className="title">Price range</h6>
+                <i className="icon-control fa fa-chevron-down text-success"></i>
+                <h6 className="title text-success">Price range</h6>
               </a>
             </header>
             <div className="filter-content collapse show" id="collapse_3">
@@ -176,7 +176,7 @@ const SideNav = () => {
                   </div>
                 </div>
 
-                <button className="btn btn-block btn-primary">Apply</button>
+                <button className="btn btn-block btn-success">Apply</button>
               </div>
             </div>
           </article>
@@ -190,8 +190,8 @@ const SideNav = () => {
                 aria-expanded="true"
                 className=""
               >
-                <i className="icon-control fa fa-chevron-down"></i>
-                <h6 className="title">Sizes</h6>
+                <i className="icon-control fa fa-chevron-down text-success"></i>
+                <h6 className="title text-success">Sizes</h6>
               </a>
             </header>
             <div className="filter-content collapse show" id="collapse_4">
@@ -228,8 +228,8 @@ const SideNav = () => {
                 aria-expanded="false"
                 className=""
               >
-                <i className="icon-control fa fa-chevron-down"></i>
-                <h6 className="title">More filter</h6>
+                <i className="icon-control fa fa-chevron-down text-success"></i>
+                <h6 className="title text-success">More filter</h6>
               </a>
             </header>
             <div className="filter-content collapse in" id="collapse_5">

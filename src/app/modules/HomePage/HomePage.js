@@ -8,14 +8,37 @@ import Products from "./Products";
 
 const HomePage = () => {
   // eslint-disable-next-line no-unused-vars
-  const [productsData, setProductsData] = useState(demoData);
+  let [productsData, setProductsData] = useState(demoData);
+  const [itemToSearch, setItemToSearch] = useState("");
+  const searchItems = (item) => {
+    item.preventDefault();
+    setItemToSearch(item.target.value);
+  };
+  if (itemToSearch.length > 0) {
+    productsData = productsData.filter((i) => {
+      return i.name.toLowerCase().includes(itemToSearch.toLowerCase());
+    });
+  }
   return (
     <>
       <div className="row">
         <div className="col-md-3">
-          <SideNav/>
+          <SideNav />
         </div>
         <div className="col-md-9">
+          {" "}
+          <div className="justify-content-center mt-5">
+            <h6>Search Product</h6>
+            <div className="input-group mb-2 mr-sm-2">
+              <input
+                type="text"
+                className="form-control"
+                onChange={searchItems}
+                value={itemToSearch}
+                placeholder="search by product name"
+              />
+            </div>
+          </div>
           <div className="row">
             {productsData.map((products) => (
               <div className="col-md-3 py-2 " key={products.id}>
@@ -27,7 +50,7 @@ const HomePage = () => {
       </div>
       <LatestBlog />
       <CompanyObjective />
-      <Footer/>
+      <Footer />
     </>
   );
 };

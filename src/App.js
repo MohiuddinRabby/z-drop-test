@@ -12,9 +12,6 @@ const App = () => {
         <Router>
           <MainNav></MainNav>
           <div className="row">
-            {/* <div className="col-lg-3" id="sidebar">
-              <h3>Sidebar</h3>
-            </div> */}
             <div className="col-lg-12" id="homepage">
               <Switch>
                 <Route exact path="/" component={HomePage} />
